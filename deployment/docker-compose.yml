@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  quantum-simulation:
+    build: .
+    container_name: quantum_simulation
+    volumes:
+      - ./quantum_simulation:/app
+    command: bash -c "cd /app && ./main"
+  visualization:
+    image: python:3.8-slim
+    container_name: visualization
+    volumes:
+      - ./visualization:/app
+    command: bash -c "cd /app && python quantum_visualization.py"
