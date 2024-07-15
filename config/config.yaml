@@ -1,0 +1,7 @@
+quantum_simulation:
+  num_qubits: 3
+  initial_state: |0>
+
+visualization:
+  plot_quantum_state: true
+  plot_quantum_circuit: true
