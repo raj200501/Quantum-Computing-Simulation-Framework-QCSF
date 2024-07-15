@@ -67,3 +67,12 @@ Deploy using Docker:
 ```sh
 ./scripts/deploy.sh
 ```
+
+
+# Graphs and Stuff
+![Quantum Circuit Simulation](https://github.com/user-attachments/assets/0f5131f2-407e-4c52-b12b-b7c3c1fc98c6)
+![Shor's Algorithm Period Finding](https://github.com/user-attachments/assets/7f4aa25b-9d3c-4fae-bc60-ad17feb37a01)
+![Grover's Algorithm Execution](https://github.com/user-attachments/assets/7c5d9371-a9db-4bb5-8af3-86db900feead)
+![Quantum State Probability Distribution](https://github.com/user-attachments/assets/e0539cf1-876e-4643-912b-45e6dc9665d9)
+
+
