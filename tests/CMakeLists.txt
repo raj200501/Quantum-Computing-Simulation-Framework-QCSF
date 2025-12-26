@@ -1,0 +1,11 @@
+add_executable(test_quantum_state test_quantum_state.cpp)
+add_executable(test_quantum_algorithm test_quantum_algorithm.cpp)
+
+target_link_libraries(test_quantum_state PRIVATE qcsf_core)
+target_link_libraries(test_quantum_algorithm PRIVATE qcsf_core)
+
+target_include_directories(test_quantum_state PRIVATE ${CMAKE_SOURCE_DIR}/quantum_simulation)
+target_include_directories(test_quantum_algorithm PRIVATE ${CMAKE_SOURCE_DIR}/quantum_simulation)
+
+add_test(NAME test_quantum_state COMMAND test_quantum_state)
+add_test(NAME test_quantum_algorithm COMMAND test_quantum_algorithm)
