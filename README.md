@@ -76,3 +76,28 @@ Deploy using Docker:
 ![Quantum State Probability Distribution](https://github.com/user-attachments/assets/e0539cf1-876e-4643-912b-45e6dc9665d9)
 
 
+
+## ✅ Verified Quickstart
+
+The following commands were run successfully from a clean checkout to build and run the simulation:
+
+```sh
+mkdir -p build
+cd build
+cmake ..
+make
+cd ..
+./scripts/run_simulation.sh
+```
+
+To run the automated smoke test (build + tests + simulation):
+
+```sh
+./scripts/smoke_test.sh
+```
+
+## Troubleshooting
+
+- **`cmake ..` fails with missing CMakeLists.txt**: Ensure you are at the repository root and that the top-level `CMakeLists.txt` exists (added in this repo). Running from the `build/` directory with `cmake ..` is the verified path.
+- **`./scripts/run_simulation.sh` cannot find `./main`**: Re-run the build steps above. The build is configured to place the `main` binary in `quantum_simulation/` for the script to find.
+- **`./scripts/deploy.sh` can’t find docker-compose.yml**: Run it from the repository root. A root-level `docker-compose.yml` is provided to support this script.
